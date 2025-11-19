@@ -92,7 +92,7 @@ export const Hero = () => {
               className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed"
               variants={itemVariants}
             >
-              Hi! My name is Arindam Sharma and I'm a creative Frontend Developer with 3+ years of experience in building high-performance, scalable, and responsive web solutions. Specializing in modern React, Next.js, and interactive user experiences.
+              Hi! My name is Arindam Sharma and I'm a creative Frontend Developer with 4+ years of experience in building high-performance, scalable, and responsive web solutions. Specializing in modern React, Next.js, and interactive user experiences.
             </motion.p>
 
             <motion.a
@@ -114,9 +114,9 @@ export const Hero = () => {
             className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12"
             variants={containerVariants}
           >
-            <StatCard end={3} label="Years of Experience" />
-            <StatCard end={7} label="Completed Projects" />
-            <StatCard end={10} label="Hours Worked" />
+            <StatCard end={4} label="Years of Experience" />
+            <StatCard end={9} label="Completed Projects" />
+            <StatCard end={15} label="Hours Worked" />
           </motion.div>
         </motion.div>
       </div>
