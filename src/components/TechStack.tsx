@@ -15,47 +15,49 @@ const techCategories = [
   {
     name: 'Frontend',
     techs: [
-      { name: 'JavaScript', icon: Code2 },
+      { name: 'JavaScript (ES6+)', icon: Code2 },
       { name: 'TypeScript', icon: Code2 },
       { name: 'React', icon: Zap },
-      { name: 'Angular', icon: Zap },
       { name: 'Next.js', icon: Layers },
+      { name: 'Angular', icon: Zap },
       { name: 'Tailwind CSS', icon: Wrench },
+      { name: 'SASS / SCSS', icon: Wrench },
       { name: 'GSAP', icon: Package },
       { name: 'Framer Motion', icon: Zap },
-      {name:'SASS', icon: Wrench},
     ],
   },
   {
     name: 'Backend',
     techs: [
       { name: 'Node.js', icon: Server },
+      { name: 'Express.js', icon: Server },
       { name: 'REST APIs', icon: Code2 },
-      { name: 'Authentication', icon: Settings },
+      { name: 'Authentication (JWT)', icon: Settings },
+      { name: 'Middleware & API Security', icon: Settings },
     ],
   },
   {
     name: 'Database',
     techs: [
-      { name: 'SQL', icon: Database },
       { name: 'MongoDB', icon: Database },
-      { name: 'MySQL', icon: Database },
+      { name: 'Mongoose ODM', icon: Database },
       { name: 'Firebase', icon: Zap },
       { name: 'Supabase', icon: Database },
-
+      { name: 'SQL / MySQL', icon: Database },
     ],
   },
   {
-    name: 'Tools',
+    name: 'Tools & Workflow',
     techs: [
-      { name: 'Git', icon: Wrench },
-      { name: 'Docker', icon: Package },
-      { name: 'AWS', icon: Layers },
+      { name: 'Git & GitHub', icon: Wrench },
       { name: 'Vite', icon: Zap },
       { name: 'Webpack', icon: Settings },
-      { name: 'CI/CD', icon: Code2 },
-      { name: 'Figma', icon: Wrench },
+      { name: 'Docker (Basics)', icon: Package },
+      { name: 'CI/CD Pipelines', icon: Code2 },
+      { name: 'Postman', icon: Settings },
+      { name: 'Vercel', icon: Layers },
       { name: 'VS Code', icon: Code2 },
+      { name: 'Figma', icon: Wrench },
     ],
   },
 ];
@@ -84,7 +86,10 @@ const TechItem = ({ tech, index }: { tech: any; index: number }) => {
       }}
     >
       <div className="flex flex-col items-center gap-2">
-        <Icon size={32} className="text-accent group-hover:text-accent-dark transition-colors" />
+        <Icon
+          size={32}
+          className="text-accent group-hover:text-accent-dark transition-colors"
+        />
         <span className="text-xs font-semibold text-slate-600 group-hover:text-slate-900 text-center transition-colors">
           {tech.name}
         </span>
@@ -145,7 +150,9 @@ export const TechStack = () => {
                 className="space-y-6"
                 variants={categoryVariants}
               >
-                <h3 className="text-2xl font-bold text-slate-900">{category.name}</h3>
+                <h3 className="text-2xl font-bold text-slate-900">
+                  {category.name}
+                </h3>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                   {category.techs.map((tech, index) => (
                     <TechItem

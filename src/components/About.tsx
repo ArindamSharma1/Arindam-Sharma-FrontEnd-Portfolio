@@ -3,12 +3,12 @@ import { useInView } from 'react-intersection-observer';
 import { Check } from 'lucide-react';
 
 const features = [
-  'User-Centered Design',
-  'Responsive Development',
+  'Product-Focused Development',
+  'Responsive Interfaces',
+  'Backend API Integration',
   'Performance Optimization',
-  'Accessibility First',
-  'Clean Code Architecture',
-  'UI/UX Design',
+  'Clean Architecture',
+  'Accessible UI Design'
 ];
 
 export const About = () => {
@@ -69,21 +69,21 @@ export const About = () => {
                 className="text-lg text-slate-600 leading-relaxed"
                 variants={itemVariants}
               >
-                I'm passionate about creating beautiful, functional, and user-friendly web experiences. My approach combines technical excellence with creative problem-solving to deliver solutions that exceed expectations.
+                I’m passionate about building reliable, user-centric web applications that balance clean frontend experiences with well-structured backend systems. My approach focuses on clarity, performance, and scalability across the full stack.
               </motion.p>
 
               <motion.p
                 className="text-lg text-slate-600 leading-relaxed"
                 variants={itemVariants}
               >
-                Whether it's building responsive interfaces, optimizing performance, or implementing accessibility standards, I bring meticulous attention to detail to every project. I believe in writing clean, maintainable code that serves as a foundation for future development.
+                Whether I’m designing responsive React interfaces, developing RESTful APIs with Node and Express, or managing data with MongoDB, I pay close attention to structure, performance, and maintainability. I value clean, readable code that can scale and evolve over time.
               </motion.p>
 
               <motion.p
                 className="text-lg text-slate-600 leading-relaxed"
                 variants={itemVariants}
               >
-                With a strong foundation in modern web technologies and a commitment to continuous learning, I stay updated with the latest industry trends and best practices to deliver cutting-edge solutions.
+                With a strong foundation in modern web technologies and a commitment to continuous learning, I keep improving my workflow and staying current with best practices to deliver practical, production-ready solutions.
               </motion.p>
             </motion.div>
 

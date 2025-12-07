@@ -85,14 +85,14 @@ export const Hero = () => {
               className="text-6xl md:text-7xl lg:text-8xl font-black leading-tight text-gradient"
               variants={itemVariants}
             >
-              FRONTEND<br />DEVELOPER
+              MERN-STACK<br />DEVELOPER
             </motion.h1>
 
             <motion.p
               className="text-lg md:text-xl text-slate-600 max-w-2xl leading-relaxed"
               variants={itemVariants}
             >
-              Hi! My name is Arindam Sharma and I'm a creative Frontend Developer with 4+ years of experience in building high-performance, scalable, and responsive web solutions. Specializing in modern React, Next.js, and interactive user experiences.
+              Hi! My name is Arindam Sharma and I’m a MERN Stack Developer with experience building scalable, performance-driven web applications. I focus on creating clean, responsive interfaces with React while designing reliable backend systems using Node.js, Express, and MongoDB.
             </motion.p>
 
             <motion.a
