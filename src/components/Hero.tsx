@@ -105,7 +105,7 @@ export const Hero = () => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  const headline = "Cybersecurity Student & Security-Focused Developer";
+  const headline = "Cybersecurity Student focused on SOC, Threat Detection, and Secure Systems";
   const words = headline.split(" ");
 
   return (
@@ -143,10 +143,10 @@ export const Hero = () => {
                     className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] text-txt-primary tracking-tight"
                     variants={wordVariants}
                   >
-                    {word === "Cybersecurity" || word === "Security-Focused" ? (
+                    {["Cybersecurity", "SOC,", "Secure"].includes(word) ? (
                       <span className="text-accent relative inline-block">
                         {word}
-                        {word === "Cybersecurity" && <span className="absolute bottom-2 left-0 w-full h-2 bg-accent/20 -z-10"></span>}
+                        <span className="absolute bottom-2 left-0 w-full h-2 bg-accent/20 -z-10"></span>
                       </span>
                     ) : (
                       word
@@ -160,12 +160,22 @@ export const Hero = () => {
               className="text-lg md:text-xl text-txt-secondary max-w-2xl leading-relaxed font-medium"
               variants={fadeVariants}
             >
-              Detecting threats, building <span className="text-txt-primary">secure applications,</span> and automating <span className="text-txt-primary">SOC workflows.</span>
+              Built a SOC lab with Wazuh and ELK, worked on log analysis, network segmentation, and secure application design.
             </motion.p>
 
-            <motion.div variants={buttonVariants} className="pt-4">
+            <motion.div variants={buttonVariants} className="pt-4 flex items-center gap-4">
               <motion.a
                 className="button-primary flex items-center gap-2 group w-fit text-sm tracking-wide"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                href="#projects"
+                aria-label="View Projects"
+              >
+                View Projects
+                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </motion.a>
+              <motion.a
+                className="px-6 py-3 rounded-md border border-white/10 hover:border-accent/50 text-txt-secondary hover:text-txt-primary transition-colors flex items-center gap-2 text-sm tracking-wide group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="/projects/Arindam_Sharma_Resume_C.pdf"
@@ -174,8 +184,7 @@ export const Hero = () => {
                 rel="noopener noreferrer"
                 aria-label="Resume"
               >
-                View Resume
-                <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                Resume
               </motion.a>
             </motion.div>
           </div>

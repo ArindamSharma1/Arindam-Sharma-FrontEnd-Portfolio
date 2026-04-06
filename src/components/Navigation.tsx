@@ -5,9 +5,11 @@ import { useScrollSection } from '../hooks/useScrollSection';
 
 const navItems = [
   { id: 'home', label: 'Home' },
-  { id: 'about', label: 'About Me' },
-  { id: 'experience', label: 'Experience' },
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
+  { id: 'practice', label: 'Practice' },
+  { id: 'experience', label: 'Experience' },
   { id: 'contact', label: 'Contact' },
 ];
 

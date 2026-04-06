@@ -72,14 +72,28 @@ export const About = () => {
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                I specialize in cybersecurity, focusing on both offensive and defensive security. Through building my SOC lab, I learned to analyze traffic and detect threats. <span className="text-txt-primary font-medium">My background in full-stack development</span> helps me understand vulnerabilities from the inside out — allowing me to effectively build secure systems and break insecure ones.
+                I am a Computer Science student specializing in Cyber Security. I focus on building secure infrastructure, analyzing network traffic, and identifying system vulnerabilities.
               </motion.p>
 
               <motion.p
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                I actively apply concepts from the <span className="text-txt-primary font-medium">OWASP Top 10</span> to secure APIs and implement strict access controls.
+                Through my hands-on work, I have built a local SOC setup using Wazuh and ELK. I actively monitor logs, write custom alert rules, and work with tools like Burp Suite, Wireshark, and Nmap.
+              </motion.p>
+
+              <motion.p
+                className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
+                variants={itemVariants}
+              >
+                My background in secure development ensures I understand vulnerabilities from the inside out. I actively apply OWASP Top 10 concepts, implement RBAC, and secure APIs against common threats.
+              </motion.p>
+
+              <motion.p
+                className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
+                variants={itemVariants}
+              >
+                I am actively looking for entry-level cybersecurity roles such as SOC Analyst or Security Engineer where I can defend systems and investigate active threats.
               </motion.p>
             </motion.div>
 
