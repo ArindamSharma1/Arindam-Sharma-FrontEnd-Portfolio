@@ -3,9 +3,9 @@ import { useInView } from 'react-intersection-observer';
 import { Check } from 'lucide-react';
 
 const philosophy = [
-  'Build for users, engineer for scale.',
-  'Clean code is a non-negotiable standard.',
-  'Performance is a feature, not an afterthought.',
+  'Build secure systems, break insecure ones.',
+  'Security is a feature, not an afterthought.',
+  'Analyze traffic, detect threats, and automate alerts.',
 ];
 
 export const About = () => {
@@ -72,14 +72,14 @@ export const About = () => {
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                I don't just write code; I design systems. My approach is rooted in the belief that <span className="text-txt-primary font-medium">simplicity is the ultimate sophistication</span>. Whether architecting a microservice or refining a UI interaction, I prioritize clarity, maintainability, and end-user value above complexity.
+                I specialize in cybersecurity, focusing on both offensive and defensive security. Through building my SOC lab, I learned to analyze traffic and detect threats. <span className="text-txt-primary font-medium">My background in full-stack development</span> helps me understand vulnerabilities from the inside out — allowing me to effectively build secure systems and break insecure ones.
               </motion.p>
 
               <motion.p
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                I thrive in the intersection of <span className="text-txt-primary font-medium">design and engineering</span>, ensuring that technical decisions translate into tangible product excellence.
+                I actively apply concepts from the <span className="text-txt-primary font-medium">OWASP Top 10</span> to secure APIs and implement strict access controls.
               </motion.p>
             </motion.div>
 

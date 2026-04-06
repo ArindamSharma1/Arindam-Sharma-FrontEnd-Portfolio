@@ -105,7 +105,7 @@ export const Hero = () => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  const headline = "Engineering Scalable Web Ecosystems";
+  const headline = "Cybersecurity Student & Security-Focused Developer";
   const words = headline.split(" ");
 
   return (
@@ -143,10 +143,10 @@ export const Hero = () => {
                     className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] text-txt-primary tracking-tight"
                     variants={wordVariants}
                   >
-                    {word === "Web" || word === "Ecosystems" ? (
+                    {word === "Cybersecurity" || word === "Security-Focused" ? (
                       <span className="text-accent relative inline-block">
                         {word}
-                        {word === "Ecosystems" && <span className="absolute bottom-2 left-0 w-full h-2 bg-accent/20 -z-10"></span>}
+                        {word === "Cybersecurity" && <span className="absolute bottom-2 left-0 w-full h-2 bg-accent/20 -z-10"></span>}
                       </span>
                     ) : (
                       word
@@ -160,7 +160,7 @@ export const Hero = () => {
               className="text-lg md:text-xl text-txt-secondary max-w-2xl leading-relaxed font-medium"
               variants={fadeVariants}
             >
-              Full-stack web development focused on <span className="text-txt-primary">performance, maintainability,</span> and <span className="text-txt-primary">scale.</span>
+              Detecting threats, building <span className="text-txt-primary">secure applications,</span> and automating <span className="text-txt-primary">SOC workflows.</span>
             </motion.p>
 
             <motion.div variants={buttonVariants} className="pt-4">
