@@ -88,11 +88,11 @@ const StatCard = ({ end, label }: { end: number; label: string }) => {
     >
       <div className="text-3xl font-bold text-accent mb-1">
         {count}
-        {label === 'Completed Projects' && '+'}
-        {label === 'Years Experience' && '+'}
-        {label === 'Code Quality %' && '%'}
+        {label === 'Projects Shipped' && '+'}
+        {label === 'Years of Building' && '+'}
+        {label === 'Patent Filed' && ''}
       </div>
-      <p className="text-txt-secondary text-sm font-medium tracking-wide uppercase">{label}</p>
+      <p className="text-txt-secondary text-xs md:text-sm font-medium tracking-wide uppercase">{label}</p>
     </motion.div>
   );
 };
@@ -105,7 +105,7 @@ export const Hero = () => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
   const yText = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  const headline = "Cybersecurity Student focused on SOC, Threat Detection, and Secure Systems";
+  const headline = "Building secure systems and scalable full-stack applications.";
   const words = headline.split(" ");
 
   return (
@@ -113,7 +113,7 @@ export const Hero = () => {
       ref={targetRef}
       id="home"
       data-section="home"
-      className="pt-24 pb-20 min-h-screen flex items-start relative overflow-hidden"
+      className="pt-32 pb-20 min-h-screen flex items-start relative overflow-hidden"
     >
       {/* Background Parallax Elements */}
       <motion.div
@@ -143,7 +143,7 @@ export const Hero = () => {
                     className="text-5xl md:text-7xl lg:text-8xl font-black leading-[1.1] text-txt-primary tracking-tight"
                     variants={wordVariants}
                   >
-                    {["Cybersecurity", "SOC,", "Secure"].includes(word) ? (
+                    {["secure", "systems", "full-stack"].includes(word.toLowerCase().replace(/[^a-z-]/g, "")) ? (
                       <span className="text-accent relative inline-block">
                         {word}
                         <span className="absolute bottom-2 left-0 w-full h-2 bg-accent/20 -z-10"></span>
@@ -160,7 +160,7 @@ export const Hero = () => {
               className="text-lg md:text-xl text-txt-secondary max-w-2xl leading-relaxed font-medium"
               variants={fadeVariants}
             >
-              Built a SOC lab with Wazuh and ELK, worked on log analysis, network segmentation, and secure application design.
+              Final-year B.Tech student in Cyber Security at JUIT (2026). Available for SOC Analyst, Software Developer, and DevOps roles. Developer of a patent-filed hackathon project.
             </motion.p>
 
             <motion.div variants={buttonVariants} className="pt-4 flex items-center gap-4">
@@ -178,19 +178,18 @@ export const Hero = () => {
                 className="px-6 py-3 rounded-md border border-white/10 hover:border-accent/50 text-txt-secondary hover:text-txt-primary transition-colors flex items-center gap-2 text-sm tracking-wide group"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/projects/Arindam_Sharma_Resume_C.pdf"
-                download="Arindam_Sharma_Resume_C.pdf"
+                href="https://github.com/ArindamSharma1"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Resume"
+                aria-label="GitHub"
               >
-                Resume
+                GitHub Profile
               </motion.a>
             </motion.div>
           </div>
 
           <motion.div
-            className="grid grid-cols-2 md:grid-cols-3 gap-12 pt-8 border-t border-primary-surface/30 w-full md:w-fit"
+            className="grid grid-cols-3 gap-6 md:gap-12 pt-8 border-t border-primary-surface/30 w-full md:w-fit"
             variants={containerVariants}
           >
             {HERO_STATS.map((stat) => (

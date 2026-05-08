@@ -4,8 +4,8 @@ import { Check } from 'lucide-react';
 
 const philosophy = [
   'Build secure systems, break insecure ones.',
-  'Security is a feature, not an afterthought.',
-  'Analyze traffic, detect threats, and automate alerts.',
+  'Security is a core feature, not an afterthought.',
+  'Automation and CI/CD are the backbone of modern engineering.',
 ];
 
 export const About = () => {
@@ -72,28 +72,28 @@ export const About = () => {
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                I am a Computer Science student specializing in Cyber Security. I focus on building secure infrastructure, analyzing network traffic, and identifying system vulnerabilities.
+                I am a Computer Science student at JUIT specializing in Cyber Security. My work spans from building scalable full-stack applications to hardening infrastructure and automating security operations.
               </motion.p>
 
               <motion.p
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                Through my hands-on work, I have built a local SOC setup using Wazuh and ELK. I actively monitor logs, write custom alert rules, and work with tools like Burp Suite, Wireshark, and Nmap.
+                I have experience deploying SIEM systems like Wazuh and ELK for real-time threat detection, while also building live SaaS products using Next.js, FastAPI, and PostgreSQL.
               </motion.p>
 
               <motion.p
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                My background in secure development ensures I understand vulnerabilities from the inside out. I actively apply OWASP Top 10 concepts, implement RBAC, and secure APIs against common threats.
+                I focus on writing clean, maintainable code and securing it through rigorous input validation, RBAC implementation, and containerized deployments using Docker.
               </motion.p>
 
               <motion.p
                 className="text-lg md:text-xl text-txt-secondary leading-relaxed font-light"
                 variants={itemVariants}
               >
-                I am actively looking for entry-level cybersecurity roles such as SOC Analyst or Security Engineer where I can defend systems and investigate active threats.
+                My hackathon projects have been recognized with university awards and selected for patent filing, demonstrating my ability to build innovative solutions that solve real problems.
               </motion.p>
             </motion.div>
 

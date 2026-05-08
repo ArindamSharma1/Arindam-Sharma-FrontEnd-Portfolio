@@ -45,7 +45,7 @@ export const Footer = () => {
         >
           <motion.div variants={itemVariants} className="max-w-2xl">
             <h2 className="text-5xl md:text-6xl font-black tracking-tight mb-8">
-              Building secure systems. <br/><span className="text-accent">Breaking insecure ones.</span>
+              Building secure systems <br/><span className="text-accent">and scalable applications.</span>
             </h2>
             <div className="flex flex-wrap gap-4">
               {socials.map((social) => {

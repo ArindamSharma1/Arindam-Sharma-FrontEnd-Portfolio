@@ -97,7 +97,7 @@ export const Contact = () => {
               Get In Touch
             </h2>
             <p className="text-txt-secondary text-lg">
-              Have a project in mind? Let's talk.
+              Available for full-time roles and project collaborations.
             </p>
           </motion.div>
 
@@ -139,7 +139,7 @@ export const Contact = () => {
                       href="tel:+918580705992"
                       className="text-accent hover:text-accent-hover transition-colors mt-1"
                     >
-                      +91 8580705992
+                      +91 85807 05992
                     </a>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export const Contact = () => {
                   <div>
                     <h3 className="text-lg font-bold text-txt-primary">Location</h3>
                     <p className="text-txt-secondary mt-1">
-                      India
+                      Solan, India
                     </p>
                   </div>
                 </div>

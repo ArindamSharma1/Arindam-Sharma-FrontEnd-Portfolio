@@ -9,8 +9,8 @@ import CustomCursor from "./components/CustomCursor";
 const About = lazy(() => import('./components/About').then(module => ({ default: module.About })));
 const Skills = lazy(() => import('./components/Skills').then(module => ({ default: module.Skills })));
 const Projects = lazy(() => import('./components/Projects').then(module => ({ default: module.Projects })));
-const SecurityPractice = lazy(() => import('./components/SecurityPractice').then(module => ({ default: module.SecurityPractice })));
 const Experience = lazy(() => import('./components/Experience').then(module => ({ default: module.Experience })));
+const Education = lazy(() => import('./components/Education').then(module => ({ default: module.Education })));
 const Contact = lazy(() => import('./components/Contact').then(module => ({ default: module.Contact })));
 const Footer = lazy(() => import('./components/Footer').then(module => ({ default: module.Footer })));
 const ScrollToTop = lazy(() => import('./components/ScrollToTop').then(module => ({ default: module.ScrollToTop })));
@@ -29,8 +29,8 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          <SecurityPractice />
           <Experience />
+          <Education />
           <Contact />
           <Footer />
           <ScrollToTop />

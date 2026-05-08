@@ -8,15 +8,14 @@ const navItems = [
   { id: 'about', label: 'About' },
   { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' },
-  { id: 'practice', label: 'Practice' },
   { id: 'experience', label: 'Experience' },
+  { id: 'education', label: 'Education' },
   { id: 'contact', label: 'Contact' },
 ];
 
 const socials = [
   { icon: Github, href: 'https://github.com/ArindamSharma1', label: 'GitHub', target: '_blank' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/in/arindam-sharma-ab4712251/', label: 'LinkedIn', target: '_blank' },
-  { icon: Instagram, href: 'https://www.instagram.com/arindam._.sharma/', label: 'Instagram', target: '_blank' },
+  { icon: Linkedin, href: 'https://linkedin.com/in/arindam-sharma-ab4712251', label: 'LinkedIn', target: '_blank' },
 ];
 
 export const Navigation = () => {
