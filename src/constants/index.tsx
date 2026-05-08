@@ -87,7 +87,7 @@ export const PROJECTS = [
         title: 'Network Security Lab',
         role: 'Network Security',
         context: 'Cisco Environment',
-        image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=2262&auto=format&fit=crop',
+        image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?q=80&w=2070&auto=format&fit=crop',
         tech: ['Cisco Packet Tracer', 'VLANs', 'ACLs', 'TCP/IP'],
         description:
             'Identified ACL misconfigurations that allowed unintended traffic between departments. Designed a segmented network topology with VLANs and strict ACLs to isolate sensitive zones.',
@@ -108,7 +108,7 @@ export const PROJECTS = [
         title: 'Trading Bot',
         role: 'Developer',
         context: 'CLI Tool',
-        image: 'https://images.unsplash.com/photo-1611974717484-bc94e09f50e8?q=80&w=2340&auto=format&fit=crop',
+        image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=2070&auto=format&fit=crop',
         tech: ['Python', 'httpx', 'Binance API'],
         description:
             'Manual trading execution on testnets was slow and prone to human error. Developed a CLI tool for automated trade execution and portfolio monitoring on Binance Testnet.',
